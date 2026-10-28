@@ -742,8 +742,8 @@ a {
 }
 
 .greeting__parents {
-  font-size: 0.875rem;
-  font-weight: 400;
+  font-size: 0.96rem;
+  font-weight: 700;
   line-height: 2.2;
   color: var(--color-text);
   letter-spacing: 1px;
@@ -751,11 +751,13 @@ a {
 
 .greeting__parents .parent-row {
   display: grid;
-  grid-template-columns: 10em 0.5em 1em 2em 3.5em;
+  grid-template-columns: 9em 0.5em 1em 2em 3.5em;
   justify-content: center;
   align-items: center;
   column-gap: 0.35rem;
   white-space: nowrap;
+  position: relative;
+  left: -10px;
 }
 
 .greeting__parents .parent-names {

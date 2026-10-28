@@ -19,7 +19,7 @@ const CONFIG = {
 
   // ── 메인 (히어로) ──
   groom: {
-    name: "한재철",
+    name: "한재혁",
     nameEn: "Groom",
     father: "한 경",
     mother: "정명숙",
@@ -72,7 +72,7 @@ const CONFIG = {
   // ── 마음 전하실 곳 ──
   accounts: {
     groom: [
-      { role: "신랑", name: "한재철", bank: "국민은행", number: "067502-04-329005" },
+      { role: "신랑", name: "한재혁", bank: "국민은행", number: "067502-04-329005" },
       { role: "아버지", name: "한 경", bank: "국민은행", number: "085-05-0002-221" },
       { role: "어머니", name: "정명숙", bank: "신한은행", number: "110-003-641949" }
     ],
@@ -84,7 +84,7 @@ const CONFIG = {
 
   // ── 링크 공유 시 나타나는 문구 ──
   meta: {
-    title: "한재철 ♥ 허보영 결혼합니다",
+    title: "한재혁 (舊 한재철) ♥ 허보영 결혼합니다",
     description: "2026년 12월 5일, 소중한 분들을 초대합니다."
   }
 };
