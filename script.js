@@ -471,7 +471,21 @@
     $('#locationHall').textContent = w.hall;
     $('#locationAddress').textContent = w.address;
     $('#locationTel').textContent = w.tel ? `Tel. ${w.tel}` : '';
-    $('#locationDes').textContent = w.des;
+    // 교통편을 고정된 두 칸 레이아웃으로 표시합니다.
+    const transportEl = $('#locationDes');
+    transportEl.replaceChildren();
+    (w.transport || []).forEach((item) => {
+      const row = document.createElement('div');
+      row.className = 'location__transport-row';
+      const label = document.createElement('span');
+      label.className = 'location__transport-label';
+      label.textContent = item.label;
+      const detail = document.createElement('span');
+      detail.className = 'location__transport-detail';
+      detail.textContent = item.detail;
+      row.append(label, detail);
+      transportEl.append(row);
+    });
     $('#locationMapImg').src = 'images/location/1.jpg';
     $('#kakaoMapBtn').href = w.mapLinks.kakao || '#';
     $('#naverMapBtn').href = w.mapLinks.naver || '#';

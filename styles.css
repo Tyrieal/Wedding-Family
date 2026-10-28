@@ -1015,12 +1015,33 @@ a {
 }
 
 .location__des {
+  width: min(100%, 340px);
+  margin: 1.6rem auto 0;
   font-size: 0.8125rem;
   font-weight: 300;
   color: var(--color-text-muted);
-  white-space: pre-wrap; 
-  margin-top: 0.25rem;
+  text-align: left;
 }
+
+.location__transport-row {
+  display: grid;
+  grid-template-columns: 4.1rem minmax(0, 1fr);
+  column-gap: 0.6rem;
+  align-items: start;
+  line-height: 1.8;
+  margin-bottom: 0.85rem;
+}
+
+.location__transport-label {
+  white-space: nowrap;
+  color: var(--color-text-light);
+}
+
+.location__transport-detail {
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
 
 .location__copy {
   margin-bottom: var(--spacing-lg);
